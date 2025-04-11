@@ -1,0 +1,54 @@
+
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trip-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trip {
+  padding: 10px 10px;
+}
+
+.trip-label {
+  font-weight: 500;
+  color: #1976d2;
+}
+
+
+
+.level-2 .trip-label {
+  color: #9c27b0;
+}
+
+.connector {
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.line {
+  border-left: 2px solid #1976d2;
+  height: 100%;
+  margin-left: 12px;
+}
+
+.arrow .line {
+  border-left: 2px solid #d32f2f;
+}
+
+.arrow::after {
+  content: '>';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: rotate(90deg);
+  color: #d32f2f;
+}
